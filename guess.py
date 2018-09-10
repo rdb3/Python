@@ -3,12 +3,12 @@ import random
 
 guessesTaken = 0 # Var dec, counter for while loop (player gets 6 guesses)
 
-print('"Now hello there! What is your name?" the kind wizard, Potts, inquires.')
+print('"Well, hello there! Now, what would your name be?" the kind wizard, Potts, inquires.')
 myName = input() # Dec var, run function that evals to the str that stores in var
 
 number = random.randint(1, 20) #Program determines the number the player will be guessing
 
-print('"Well, ' +myName + ', I am thinking of a number between 1 and 20" he teases with a wink.')
+print('"Nice to meet you, ' +myName + '! Well, I am thinking of a number between 1 and 20" he teases with a wink.')
 print()
 
 while guessesTaken < 6: #At first run of this loop, guessesTaken = 0. This loop will not run if player has guessed 6 times, game over 
@@ -41,8 +41,7 @@ while guessesTaken < 6: #At first run of this loop, guessesTaken = 0. This loop 
 
 if guess == number: #i.e. player has won
         guessesTaken = str(guessesTaken)
-        print('"Good job, my ' + myName + '! It only took you ' + guessesTaken + ' guesses!')
-        print('"Bless you and your kin, and may you live well and peacefully!"')
+        print('"Good job, my ' + myName + '! It only took you ' + guessesTaken + ' guesses! Bless you and your kin, and may you live well and peacefully!"')
         print('"I must be going now, but it has been a pleasure. Until next time. Adieu!"')
 
 if guess != number: #i.e. player has lost, does not equal number
